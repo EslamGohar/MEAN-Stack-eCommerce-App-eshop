@@ -40,11 +40,12 @@
     "@nrwl/angular:library": {
       "style": "scss",
       "linter": "eslint",
-      "unitTestRunner": "jest"
+      "unitTestRunner": "jest",
+      "strict": false
     },
     "@nrwl/angular:component": {
       "style": "scss"
     }
   },
-  "defaultProject": "eshop"
+  "defaltProject": "eshop"
 }

@@ -1,0 +1,44 @@
+.banner {
+    height: 280px;
+    width: 100%;
+    background-color: #f5d8dd;
+    border-radius: 15px;
+
+    &-text {
+        color: var(--surface-700);
+        margin-top: 50px;
+        padding-left: 60px;
+        
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: 400;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 300;
+        }
+    }
+
+    &-image {
+        padding: 15px 50px 0 0;
+        text-align: right;
+    }
+
+    &-button {
+        background-color: var(--surface-0);
+        color: $primary-color;
+        border: 0;
+        border-radius: 13px;
+        height: 40px;
+
+        &:enabled:hover {   // to override the primeNg style
+            background-color: var(--surface-0);
+            color: $primary-color;
+            border: 0;
+        }
+    }
+
+}

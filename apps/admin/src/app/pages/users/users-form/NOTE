@@ -1,0 +1,9 @@
+ERROR:
+can not Post/Add users from the user form, the error shows in the backend console.
+/***
+(node:5060) UnhandledPromiseRejectionWarning: Error: Illegal arguments: undefined, string
+    at Object.bcrypt.hashSync (F:\Nodejs_Projects\eShop\node_modules\bcryptjs\dist\bcrypt.js:189:19)
+    at F:\Nodejs_Projects\eShop\routers\users.routes.js:24:26
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+***/

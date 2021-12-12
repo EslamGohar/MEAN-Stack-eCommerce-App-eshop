@@ -1,0 +1,62 @@
+<div class="product-page" *ngIf="product">
+    <div class="grid">
+        <div class="col-6">
+            <ui-gallery [images]="product.images"></ui-gallery>
+        </div>
+
+        <div class="col-6 product">
+            <h2 class="product-name">{{ product.name }}</h2>
+            <p class="product-desc">
+                {{ product.description }}
+            </p>
+
+            <div class="product-rating">
+                <p-rating [(ngModel)]="rating" [cancel]="false" [disabled]="false"></p-rating>
+            </div>
+
+            <div class="product-price">
+                {{ product.price | currency }}
+                <span class="price-before">{{ product.price + 499 | currency }}</span>
+            </div>
+
+            <div class="product-quantity">
+                <div class="p-field col-12 md-3 p-0">
+                    <label for="quantity" class="mr-2">Quantity</label>
+                    <p-inputNumber
+                        [(ngModel)]="quantity"
+                        mode="decimal" 
+                        [showButtons]="true" 
+                        inputId="quantity" 
+                        [min]="0" 
+                        [max]="100"
+                    ></p-inputNumber>
+                </div>
+            </div>
+    
+            <div class="product-actions">
+                <button
+                    pButton
+                    pRipple
+                    type="button"
+                    class="p-button-rounded mr-2"
+                    label="Buy Now"
+                ></button>
+
+                <button
+                    pButton
+                    pRipple
+                    type="button"
+                    class="p-button-rounded"
+                    label="Add to cart"
+                    (click)="addProductToCart()"
+                ></button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="grid product-rich-desc" *ngIf="product">
+        <div class="col-12">
+            <div [innerHTML]="product.richDescription"></div>
+        </div>
+    </div> 
+</div>

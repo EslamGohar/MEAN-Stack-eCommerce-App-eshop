@@ -1,0 +1,40 @@
+// Base
+@import '~normalize.css/normalize.css';
+@import './base/colors.scss';
+@import './base/fonts.scss';
+@import './base//mixin.scss';
+
+// Libraries
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/themes/saga-blue/theme.css';
+@import '~primeng/resources/primeng.min.css';
+@import '~primeflex/primeflex.css';
+@import '~animate.css/animate.css';
+
+@import './base/configuration.scss'; // I put configuration.scss under libs becuase primeNg overriding the base style
+
+// Pages
+@import './apps/eshop/pages/home-page.scss';
+@import './apps/eshop/pages/products-list.scss';
+
+// Shared
+@import './apps/eshop/shared/header.scss';
+@import './apps/eshop/shared/footer.scss';
+@import './apps/eshop/shared/nav.scss';
+
+// Libs
+@import './libs/product/products.scss';
+@import './libs/ui/banner.scss';
+@import './libs/orders/orders.scss';
+@import './libs/users/users.scss';
+
+
+// Ui
+@import './libs/ui/ui.scss';
+
+.container {
+    width: 1220px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: var(--surface-100);
+}
