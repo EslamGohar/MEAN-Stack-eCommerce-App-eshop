@@ -1,7 +1,4 @@
 {
-  "cli": {
-    "analytics": "adaa87ad-0453-488b-b27f-9ef222e17e33"
-  },
   "version": 1,
   "projects": {
     "admin": {
